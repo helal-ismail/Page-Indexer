@@ -3,7 +3,7 @@ class Api::V1::PagesController < ApiController
 
   api :POST, '/crawl', "Crawl a webpage"
   param :link, String, :desc => "URL of the page to be processed", :required => true
-  param :override, [true, false], :desc => "[False if nothing is specified] A flag to indicate either to override the contents in the DB if the page was crawled before", :default => false
+  param :override, [true, false], :desc => "[False if nothing is specified] A flag that indicate either to override the contents in the DB if the page was crawled before", :default => false
 
   def crawl
 

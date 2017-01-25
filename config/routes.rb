@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     end
   end
 
+  root 'apipie/apipies#index'
+
 
 end
